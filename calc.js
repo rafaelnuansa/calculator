@@ -4,13 +4,13 @@
   }
 
  // Mengevaluasi Value
-  function solve() {
+  function solveOnClick() {
     let x = document.getElementById("hasil").value
     let y = eval(x)
     document.getElementById("hasil").value = y
   }
 
   // Function Untuk Clear Nilai Atau Value
-  function clear() {
+  function clearOnClick() {
     document.getElementById("hasil").value = ""
   }

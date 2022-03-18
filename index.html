@@ -21,7 +21,7 @@
 		<table class="table table-calc" >
 			<tr>
 				<td colspan="3"><input type="text" class="form-control form-control-lg" id="hasil" readonly /></td>
-				<td><input class="btn btn-danger btn-calc" type="button" value="C" onclick="clear()" /> </td>
+				<td><input class="btn btn-danger btn-calc" type="button" value="c" onclick="clearOnClick()" /> </td>
 			</tr>
 			<tr>
 				<td><input class="btn btn-calc" type="button" value="1" onclick="showOnClick('1')" /> </td>
@@ -45,7 +45,7 @@
 				<td><input class="btn btn-danger btn-calc" type="button" value="." onclick="showOnClick('.')" /> </td>
 				<td><input class="btn btn-calc" type="button" value="0" onclick="showOnClick('0')" /> </td>
 				<!-- solve function call function solve to evaluate value -->
-				<td><input class="btn btn-primary btn-calc" type="button" value="=" onclick="solve()" /> </td>
+				<td><input class="btn btn-primary btn-calc" type="button" value="=" onclick="solveOnClick()" /> </td>
 				<td><input class="btn btn-danger btn-calc" type="button" value="*" onclick="showOnClick('*')" /> </td>
 			</tr>
 		</table>
