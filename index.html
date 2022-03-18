@@ -14,38 +14,45 @@
 
 <body>
 	<div class="card calc-wrapper mt-5 shadow-lg bg-white rounded">
-		<h2 style="text-align: center;"> Calculator </h2>
+		<div class="card-header">
+			<h1 class="text-center"> Calculator </h1>
+		</div>
+	<div class="card-body">
 		<table class="table table-calc" >
 			<tr>
 				<td colspan="3"><input type="text" class="form-control form-control-lg" id="hasil" readonly /></td>
 				<td><input class="btn btn-danger btn-calc" type="button" value="C" onclick="clear()" /> </td>
 			</tr>
 			<tr>
-				<td><input class="btn btn-primary btn-calc" type="button" value="1" onclick="showOnClick('1')" /> </td>
-				<td><input class="btn btn-primary btn-calc" type="button" value="2" onclick="showOnClick('2')" /> </td>
-				<td><input class="btn btn-primary btn-calc" type="button" value="3" onclick="showOnClick('3')" /> </td>
+				<td><input class="btn  btn-calc" type="button" value="1" onclick="showOnClick('1')" /> </td>
+				<td><input class="btn btn-calc" type="button" value="2" onclick="showOnClick('2')" /> </td>
+				<td><input class="btn btn-calc" type="button" value="3" onclick="showOnClick('3')" /> </td>
 				<td><input class="btn btn-danger btn-calc" type="button" value="/" onclick="showOnClick('/')" /> </td>
 			</tr>
 			<tr>
-				<td><input class="btn btn-primary btn-calc" type="button" value="4" onclick="showOnClick('4')" /> </td>
-				<td><input class="btn btn-primary btn-calc" type="button" value="5" onclick="showOnClick('5')" /> </td>
-				<td><input class="btn btn-primary btn-calc" type="button" value="6" onclick="showOnClick('6')" /> </td>
+				<td><input class="btn btn-calc" type="button" value="4" onclick="showOnClick('4')" /> </td>
+				<td><input class="btn btn-calc" type="button" value="5" onclick="showOnClick('5')" /> </td>
+				<td><input class="btn btn-calc" type="button" value="6" onclick="showOnClick('6')" /> </td>
 				<td><input class="btn btn-danger btn-calc" type="button" value="-" onclick="showOnClick('-')" /> </td>
 			</tr>
 			<tr>
-				<td><input class="btn btn-primary btn-calc" type="button" value="7" onclick="showOnClick('7')" /> </td>
-				<td><input class="btn btn-primary btn-calc" type="button" value="8" onclick="showOnClick('8')" /> </td>
-				<td><input class="btn btn-primary btn-calc" type="button" value="9" onclick="showOnClick('9')" /> </td>
+				<td><input class="btn btn-calc" type="button" value="7" onclick="showOnClick('7')" /> </td>
+				<td><input class="btn btn-calc" type="button" value="8" onclick="showOnClick('8')" /> </td>
+				<td><input class="btn btn-calc" type="button" value="9" onclick="showOnClick('9')" /> </td>
 				<td><input class="btn btn-danger btn-calc" type="button" value="+" onclick="showOnClick('+')" /> </td>
 			</tr>
 			<tr>
 				<td><input class="btn btn-danger btn-calc" type="button" value="." onclick="showOnClick('.')" /> </td>
-				<td><input class="btn btn-primary btn-calc" type="button" value="0" onclick="showOnClick('0')" /> </td>
+				<td><input class="btn btn-calc" type="button" value="0" onclick="showOnClick('0')" /> </td>
 				<!-- solve function call function solve to evaluate value -->
-				<td><input class="btn btn-danger btn-calc" type="button" value="=" onclick="solve()" /> </td>
+				<td><input class="btn btn-primary btn-calc" type="button" value="=" onclick="solve()" /> </td>
 				<td><input class="btn btn-danger btn-calc" type="button" value="*" onclick="showOnClick('*')" /> </td>
 			</tr>
 		</table>
+	</div>
+	<div class="card-footer text-center">
+		<p>https://github.com/rafaelnuansa/calculator</p>
+	</div>
 	</div>
 	<script>
 	

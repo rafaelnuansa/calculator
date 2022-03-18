@@ -20,17 +20,18 @@ body {
   .calc-wrapper {
     max-width: 800px;
     margin: 10px auto;
-    border: 1px solid #ddd;
-    padding: 25px;  
   }
   .btn-calc {
     font-size: 2em;
     width: 100%;
+    border: 3px solid #333;
   }
 
   .btn-calc:hover {
+    color: #fff;
     background: #333!important;
    transition: all 0.7s;
+   border: 3px solid #333;
   }
   .table-calc {
     width: 100%;
