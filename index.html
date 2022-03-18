@@ -1,37 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kalkulator</title>
-    <link href="style.css" rel="stylesheet">
-    <script src="calc.js" defer></script>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Calculator</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+		integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<link href="style.css" rel="stylesheet">
+	<script src="calc.js" defer></script>
 </head>
+
 <body>
-    <div class="calculator-grid">
-      <div class="output">
-        <div data-sebelum-operand class="sebelum-operand"></div>
-        <div data-sekarang-operand class="sekarang-operand"></div>
-      </div>
-      <button data-all-clear class="span-two">AC</button>
-      <button data-delete>DEL</button>
-      <button data-operasi>÷</button>
-      <button data-number>1</button>
-      <button data-number>2</button>
-      <button data-number>3</button>
-      <button data-operasi>*</button>
-      <button data-number>4</button>
-      <button data-number>5</button>
-      <button data-number>6</button>
-      <button data-operasi>+</button>
-      <button data-number>7</button>
-      <button data-number>8</button>
-      <button data-number>9</button>
-      <button data-operasi>-</button>
-      <button data-number>.</button>
-      <button data-number>0</button>
-      <button data-equals class="span-two">=</button>
-    </div>
-  </body>
+	<div class="card calc-wrapper mt-5 shadow-lg bg-white rounded">
+		<h2 style="text-align: center;"> Calculator </h2>
+		<table class="table table-calc" >
+			<tr>
+				<td colspan="3"><input type="text" class="form-control form-control-lg" id="hasil" readonly /></td>
+				<td><input class="btn btn-danger btn-calc" type="button" value="C" onclick="clear()" /> </td>
+			</tr>
+			<tr>
+				<td><input class="btn btn-primary btn-calc" type="button" value="1" onclick="showOnClick('1')" /> </td>
+				<td><input class="btn btn-primary btn-calc" type="button" value="2" onclick="showOnClick('2')" /> </td>
+				<td><input class="btn btn-primary btn-calc" type="button" value="3" onclick="showOnClick('3')" /> </td>
+				<td><input class="btn btn-danger btn-calc" type="button" value="/" onclick="showOnClick('/')" /> </td>
+			</tr>
+			<tr>
+				<td><input class="btn btn-primary btn-calc" type="button" value="4" onclick="showOnClick('4')" /> </td>
+				<td><input class="btn btn-primary btn-calc" type="button" value="5" onclick="showOnClick('5')" /> </td>
+				<td><input class="btn btn-primary btn-calc" type="button" value="6" onclick="showOnClick('6')" /> </td>
+				<td><input class="btn btn-danger btn-calc" type="button" value="-" onclick="showOnClick('-')" /> </td>
+			</tr>
+			<tr>
+				<td><input class="btn btn-primary btn-calc" type="button" value="7" onclick="showOnClick('7')" /> </td>
+				<td><input class="btn btn-primary btn-calc" type="button" value="8" onclick="showOnClick('8')" /> </td>
+				<td><input class="btn btn-primary btn-calc" type="button" value="9" onclick="showOnClick('9')" /> </td>
+				<td><input class="btn btn-danger btn-calc" type="button" value="+" onclick="showOnClick('+')" /> </td>
+			</tr>
+			<tr>
+				<td><input class="btn btn-danger btn-calc" type="button" value="." onclick="showOnClick('.')" /> </td>
+				<td><input class="btn btn-primary btn-calc" type="button" value="0" onclick="showOnClick('0')" /> </td>
+				<!-- solve function call function solve to evaluate value -->
+				<td><input class="btn btn-danger btn-calc" type="button" value="=" onclick="solve()" /> </td>
+				<td><input class="btn btn-danger btn-calc" type="button" value="*" onclick="showOnClick('*')" /> </td>
+			</tr>
+		</table>
+	</div>
+	<script>
+	
+	</script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+		integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous">
+	</script>
+</body>
+
 </html>
