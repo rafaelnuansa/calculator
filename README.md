@@ -1,3 +1,7 @@
 # calculator
+TOOLS :
+VSCODE
 
-<h1>TUGAS Bahasa Pemrograman 1/ Pemrograman Berorientasi Objek (Ma’shum Abdul Jabbar, S.Kom, M.T.I) / ILKOM / II<h1>
+LANG:
+JAVASCRIPT
+<p>TUGAS Bahasa Pemrograman 1/ Pemrograman Berorientasi Objek (Ma’shum Abdul Jabbar, S.Kom, M.T.I) / ILKOM / II<p>
