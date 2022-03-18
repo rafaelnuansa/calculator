@@ -4,22 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kalkulator OOP</title>
- <style>
-     .name-wrapper {
-         text-align: center; 
-         font-family: Open Sans;
-     }
- </style>
+    <title>Kalkulator</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="calc.js" defer></script>
 </head>
 <body>
-    
-<div class="name-wrapper">
-    <h2>Name : Rafael Nuansa Ramadhon</h2>
-</div>
-
-<script>
-
-</script>
-</body>
+    <div class="calculator-grid">
+      <div class="output">
+        <div data-sebelum-operand class="sebelum-operand"></div>
+        <div data-sekarang-operand class="sekarang-operand"></div>
+      </div>
+      <button data-all-clear class="span-two">AC</button>
+      <button data-delete>DEL</button>
+      <button data-operasi>÷</button>
+      <button data-number>1</button>
+      <button data-number>2</button>
+      <button data-number>3</button>
+      <button data-operasi>*</button>
+      <button data-number>4</button>
+      <button data-number>5</button>
+      <button data-number>6</button>
+      <button data-operasi>+</button>
+      <button data-number>7</button>
+      <button data-number>8</button>
+      <button data-number>9</button>
+      <button data-operasi>-</button>
+      <button data-number>.</button>
+      <button data-number>0</button>
+      <button data-equals class="span-two">=</button>
+    </div>
+  </body>
 </html>
